@@ -1,0 +1,3634 @@
+<Remote>
+  <Object type="0x6001" id="Dinosaur's Pet Generator">
+    <DisplayId>Dinosaur's Thessal</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>16</Index>
+    </AnimatedTexture>
+    <ScaleValue>3</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <Activate objectId="Dinosaur's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6101" id="Dinosaur's Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>16</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Tag name="Shoot"/>
+    <Tag name="HP">
+      <Min>25</Min>
+      <Max>25</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>15</Min>
+      <Max>15</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Size>75</Size>
+    <Projectile id="0">
+      <ObjectId>White Flame</ObjectId>
+      <Damage>75</Damage>
+      <Size>80</Size>
+      <Speed>160</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x6002" id="Musashi's Pet Generator">
+    <DisplayId>Musashi's Oryx</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiChar16x16</File>
+      <Index>0x54</Index>
+    </Texture>
+    <ScaleValue>3</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <Activate objectId="Musashi's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6102" id="Musashi's Pet">
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiChar16x16</File>
+      <Index>0x54</Index>
+    </Texture>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>100</Min>
+      <Max>100</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>75</Min>
+      <Max>75</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Size>75</Size>
+    <Projectile id="0">
+      <ObjectId>White Flame</ObjectId>
+      <Damage>175</Damage>
+      <Size>80</Size>
+      <Speed>160</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x6003" id="Pet T0 Generator">
+    <DisplayId>Ghost Pet T0</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x0a</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Tier>0</Tier>
+    <ScaleValue>3</ScaleValue>
+    <SlotType>10</SlotType>
+    <Description>This pet do +2/9 hit points and +1/2 magic points healing every 2 seconds. He can deal ghost damage 10 per turn on max range 7.5. PET EFFECT: Slow for 3 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Activate objectId="Ghost Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x7086" id="Ghost Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0xcd</Index>
+    </Texture>
+    <Tier>0</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 0. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Ghost Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6103" id="Ghost Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x0a</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>50</Size>
+    <ShadowSize>50</ShadowSize>
+    <Tag name="HP">
+      <Min>2</Min>
+      <Max>9</Max>
+      <Cooldown>2000</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>1</Min>
+      <Max>2</Max>
+      <Cooldown>2000</Cooldown>
+    </Tag> 
+    <Tag name="Taunt">
+      <Message>Buuu...</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>White Superblast</ObjectId>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <Damage>10</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>750</LifetimeMS>
+    </Projectile>
+  </Object>
+  <!--
+  <Object type="0x7221" id="Banana T0">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>chars8x8rPets1</File>
+      <Index>20</Index>
+    </Texture>
+    <Tier>0</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 0. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Banana T0 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6500" id="Banana T0 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>20</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>50</Size>
+    <ShadowSize>50</ShadowSize>
+    <Tag name="HP">
+      <Min>2</Min>
+      <Max>9</Max>
+      <Cooldown>2000</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>1</Min>
+      <Max>2</Max>
+      <Cooldown>2000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <Damage>10</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>750</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x6004" id="Pet T1 Generator">
+    <DisplayId>Fire Pet T1</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x09</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Tier>1</Tier>
+    <ScaleValue>3</ScaleValue>
+    <Description>This pet do +9/13 hit points and +2/5 magic points healing every 1.9 seconds. He can deal fire damage 25 per turn on max range 7.8. PET EFFECT: Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Activate objectId="Fire Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x7087" id="Fire Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0xce</Index>
+    </Texture>
+    <Tier>1</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 1. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Fire Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6104" id="Fire Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x09</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>70</Size>
+    <ShadowSize>70</ShadowSize>
+    <Tag name="HP">
+      <Min>9</Min>
+      <Max>13</Max>
+      <Cooldown>1900</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>2</Min>
+      <Max>5</Max>
+      <Cooldown>1900</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Fiiiire!</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>LavaBombBlast</ObjectId>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <Damage>25</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>780</LifetimeMS>
+    </Projectile>
+  </Object>
+  <!--<Object type="0x7222" id="Banana T1">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>chars8x8rPets1</File>
+      <Index>21</Index>
+    </Texture>
+    <Tier>1</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 1. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Banana T1 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6501" id="Banana T1 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>21</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>70</Size>
+    <ShadowSize>70</ShadowSize>
+    <Tag name="HP">
+      <Min>9</Min>
+      <Max>13</Max>
+      <Cooldown>1900</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>2</Min>
+      <Max>5</Max>
+      <Cooldown>1900</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <Damage>25</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>780</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x6005" id="Pet T2 Generator">
+    <DisplayId>Ent Pet T2</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x08</Index>
+    </AnimatedTexture>
+    <Tier>2</Tier>
+    <SlotType>10</SlotType>
+    <Description>This pet do +13/18 hit points and +5/9 magic points healing every 1.8 seconds. He can deal earth damage 55 per turn on max range 8.1. PET EFFECT: Slow for 6 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Activate objectId="Ent Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x7088" id="Ent Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0xcf</Index>
+    </Texture>
+    <Tier>2</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 2. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Ent Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6105" id="Ent Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x08</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>80</Size>
+    <ShadowSize>80</ShadowSize>
+    <Tag name="HP">
+      <Min>13</Min>
+      <Max>18</Max>
+      <Cooldown>1800</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>5</Min>
+      <Max>9</Max>
+      <Cooldown>1800</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Krak! Krak!</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Stick</ObjectId>
+      <ConditionEffect duration="6">Slowed</ConditionEffect>
+      <Damage>55</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>810</LifetimeMS>
+    </Projectile>
+  </Object>
+  <!--<Object type="0x7223" id="Banana T2">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>chars8x8rPets1</File>
+      <Index>22</Index>
+    </Texture>
+    <Tier>2</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 2. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Banana T2 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6502" id="Banana T2 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>22</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>80</Size>
+    <ShadowSize>80</ShadowSize>
+    <Tag name="HP">
+      <Min>13</Min>
+      <Max>18</Max>
+      <Cooldown>1800</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>5</Min>
+      <Max>9</Max>
+      <Cooldown>1800</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="6">Slowed</ConditionEffect>
+      <Damage>55</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>810</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x6006" id="Pet T3 Generator">
+    <DisplayId>Ice Pet T3</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x07</Index>
+    </AnimatedTexture>
+    <Tier>3</Tier>
+    <SlotType>10</SlotType>
+    <Description>This pet do +18/24 hit points and +9/11 magic points healing every 1.7 seconds. He can deal ice damage 85 per turn on max range 8.4. PET EFFECT: Weakness for 2 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Activate objectId="Ice Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x7089" id="Ice Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0xdc</Index>
+    </Texture>
+    <Tier>3</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 3. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Ice Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6106" id="Ice Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x07</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <Tag name="HP">
+      <Min>18</Min>
+      <Max>24</Max>
+      <Cooldown>1700</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>9</Min>
+      <Max>11</Max>
+      <Cooldown>1700</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Frzzzz...</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ice Burst</ObjectId>
+      <ConditionEffect duration="2">Weak</ConditionEffect>
+      <Damage>85</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>840</LifetimeMS>
+    </Projectile>
+  </Object><!--
+  <Object type="0x7224" id="Banana T3">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>chars8x8rPets1</File>
+      <Index>23</Index>
+    </Texture>
+    <Tier>3</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 3. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Banana T3 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6503" id="Banana T3 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>23</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <Tag name="HP">
+      <Min>18</Min>
+      <Max>24</Max>
+      <Cooldown>1700</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>9</Min>
+      <Max>11</Max>
+      <Cooldown>1700</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="2">Weak</ConditionEffect>
+      <Damage>85</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>840</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x6007" id="Pet T4 Generator">
+    <DisplayId>Firefighter Pet T4</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x06</Index>
+    </AnimatedTexture>
+    <Tier>4</Tier>
+    <SlotType>10</SlotType>
+    <Description>This pet do +24/32 hit points and +11/17 magic points healing every 1.6 seconds. He can deal ice damage 110 per turn on max range 8.7. PET EFFECT: Weakness for 2 seconds and Slow for 4 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Firefighter Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x708a" id="Firefighter Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0xdd</Index>
+    </Texture>
+    <Tier>4</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 4. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Firefighter Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6107" id="Firefighter Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x06</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>100</Size>
+    <ShadowSize>100</ShadowSize>
+    <Tag name="HP">
+      <Min>24</Min>
+      <Max>32</Max>
+      <Cooldown>1600</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>11</Min>
+      <Max>17</Max>
+      <Cooldown>1600</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Fiiiiiire!!!</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Fireball</ObjectId>
+      <ConditionEffect duration="2">Weak</ConditionEffect>
+      <ConditionEffect duration="4">Slowed</ConditionEffect>
+      <Damage>110</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>870</LifetimeMS>
+    </Projectile>
+  </Object><!--
+  <Object type="0x7225" id="Banana T4">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>chars8x8rPets1</File>
+      <Index>24</Index>
+    </Texture>
+    <Tier>4</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 4. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Banana T4 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6504" id="Banana T4 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>24</Index>
+    </AnimatedTexture>
+    <NoMiniMap />
+    <Size>100</Size>
+    <ShadowSize>100</ShadowSize>
+    <Tag name="HP">
+      <Min>24</Min>
+      <Max>32</Max>
+      <Cooldown>1600</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>11</Min>
+      <Max>17</Max>
+      <Cooldown>1600</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="2">Weak</ConditionEffect>
+      <ConditionEffect duration="4">Slowed</ConditionEffect>
+      <Damage>110</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>870</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x6008" id="Pet T5 Generator">
+    <DisplayId>Hell Firefighter Pet T5</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x04</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Tier>5</Tier>
+    <Description>This pet do +32/44 hit points and +17/23 magic points healing every 1.5 seconds. He can deal ice damage 120 per turn on max range 8.9. PET EFFECT: Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Hell Firefighter Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x708b" id="Hell Firefighter Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0xde</Index>
+    </Texture>
+    <Tier>5</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 5. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Hell Firefighter Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6108" id="Hell Firefighter Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x04</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>32</Min>
+      <Max>44</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>17</Min>
+      <Max>23</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Blaaaaaze!</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Fireball 2</ObjectId>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <Damage>120</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>890</LifetimeMS>
+    </Projectile>
+  </Object><!--
+  <Object type="0x7226" id="Banana T5">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>chars8x8rPets1</File>
+      <Index>25</Index>
+    </Texture>
+    <Tier>5</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 5. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Banana T5 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6505" id="Banana T5 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>25</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>32</Min>
+      <Max>44</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>17</Min>
+      <Max>23</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <Damage>120</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>890</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x6009" id="Pet T6 Generator">
+    <DisplayId>Golden Skullmaster Pet T6</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x03</Index>
+    </AnimatedTexture>
+    <Tier>6</Tier>
+    <SlotType>10</SlotType>
+    <Description>This pet do +44/57 hit points and +23/29 magic points healing every 1.4 seconds. He can deal ice damage 135 per turn on max range 9.2. PET EFFECT: Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Golden Skullmaster Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x708c" id="Golden Skullmaster Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0xdf</Index>
+    </Texture>
+    <Tier>6</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 6. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Golden Skullmaster Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6109" id="Golden Skullmaster Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x03</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>44</Min>
+      <Max>57</Max>
+      <Cooldown>1400</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>23</Min>
+      <Max>29</Max>
+      <Cooldown>1400</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Grrrr...</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Skull Bolt</ObjectId>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>135</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object><!--
+  <Object type="0x7227" id="Banana T6">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>chars8x8rPets1</File>
+      <Index>26</Index>
+    </Texture>
+    <Tier>6</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 6. You can check your pet status in Pet Shop at Nexus.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Banana T6 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6506" id="Banana T6 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>26</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>44</Min>
+      <Max>57</Max>
+      <Cooldown>1400</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>23</Min>
+      <Max>29</Max>
+      <Cooldown>1400</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <ConditionEffect duration="0.5">Armor Broken</ConditionEffect>
+      <Damage>135</Damage>
+      <Size>150</Size>
+      <Speed>100</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x720a" id="Pet T7 Generator">
+    <DisplayId>Evil Blob Pet T7</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x00</Index>
+    </AnimatedTexture>
+    <Tier>7</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 7. This pet do +54/74 hit points and +28/37 magic points healing every 1.3 seconds. He can deal lava damage 215 per turn on max range 9.2. PET EFFECT: Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Evil Blob Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x709e" id="Evil Blob Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0xef</Index>
+    </Texture>
+    <Tier>7</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 7. You can check your pet status in Pet Shop at Nexus VIP.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Evil Blob Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x610a" id="Evil Blob Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x00</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>54</Min>
+      <Max>74</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>28</Min>
+      <Max>37</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Brzk! U'th DazK...</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>215</Damage>
+      <Size>170</Size>
+      <Speed>200</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object><!--
+  <Object type="0x7228" id="Banana T7">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>chars8x8rPets1</File>
+      <Index>27</Index>
+    </Texture>
+    <Tier>7</Tier>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet with tier 7. You can check your pet status in Pet Shop at Nexus VIP.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Banana T7 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6507" id="Banana T7 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>27</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>54</Min>
+      <Max>74</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>28</Min>
+      <Max>37</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <ConditionEffect duration="0.5">Armor Broken</ConditionEffect>
+      <Damage>215</Damage>
+      <Size>170</Size>
+      <Speed>200</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x7229" id="Banana T8">
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>97</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <ScaleValue>3</ScaleValue>
+    <BagType>1</BagType>
+    <Activate objectId="Banana T8 Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6508" id="Banana T8 Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>97</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Banana Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <ConditionEffect duration="0.5">Armor Broken</ConditionEffect>
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x60f4" id="Divine Egg: Tiger">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Tiger Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41f4" id="Divine Tiger Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>57</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60f5" id="Divine Egg: Pink Lion">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Pink Lion Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41f5" id="Divine Pink Lion Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>58</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60f6" id="Divine Egg: Midnight Wolf">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Midnight Wolf Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41f6" id="Divine Midnight Wolf Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>59</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60f7" id="Divine Egg: Gold Hyena">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Gold Hyena Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41f7" id="Divine Gold Hyena Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>60</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60f8" id="Divine Egg: Phoenix">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Phoenix Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41f8" id="Divine Phoenix Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>61</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60f9" id="Divine Egg: Griffin">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Griffin Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41f9" id="Divine Griffin Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>62</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60fa" id="Divine Egg: War Elephant">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine War Elephant Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41fa" id="Divine War Elephant Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>63</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60fb" id="Divine Egg: King Gorilla">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine King Gorilla Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41fb" id="Divine King Gorilla Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>64</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60fc" id="Divine Egg: Enraged Yack">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Enraged Yack Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41fc" id="Divine Enraged Yack Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>65</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60fd" id="Divine Egg: Night Mare">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Night Mare Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41fd" id="Divine Night Mare Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>66</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60fe" id="Divine Egg: Silver Doe">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Silver Doe Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41fe" id="Divine Silver Doe Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>67</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x60ff" id="Divine Egg: Solar Owl">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Solar Owl Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x41ff" id="Divine Solar Owl Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>68</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4100" id="Divine Egg: Tandem Cobra">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Tandem Cobra Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4200" id="Divine Tandem Cobra Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>69</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4101" id="Divine Egg: Poison Drake">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Poison Drake Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4201" id="Divine Poison Drake Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>70</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4102" id="Divine Egg: Bettleman">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Bettleman Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4202" id="Divine Bettleman Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>71</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4103" id="Divine Egg: Ultrawasp">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Ultrawasp Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4203" id="Divine Ultrawasp Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>72</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4104" id="Divine Egg: Battle Penguin">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Battle Penguin Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4204" id="Divine Battle Penguin Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>73</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4105" id="Divine Egg: Tank Penguin">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Tank Penguin Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4205" id="Divine Tank Penguin Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>74</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4106" id="Divine Egg: Golden Crab">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Golden Crab Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4206" id="Divine Golden Crab Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>75</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4107" id="Divine Egg: Great Shark">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Great Shark Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4207" id="Divine Great Shark Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>76</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4108" id="Divine Egg: Blue Landfish">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Blue Landfish Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4208" id="Divine Blue Landfish Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>77</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4109" id="Divine Egg: Glowing Skull">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Glowing Skull Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4209" id="Divine Glowing Skull Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>78</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x410a" id="Divine Egg: Monkey Head">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Monkey Head Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x420a" id="Divine Monkey Head Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>79</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x410b" id="Divine Egg: Reaper">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Reaper Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x420b" id="Divine Reaper Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>80</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x410c" id="Divine Egg: Battle God">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Battle God Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x420c" id="Divine Battle God Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>81</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x410d" id="Divine Egg: Centaur">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Centaur Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x420d" id="Divine Centaur Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>82</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x410e" id="Divine Egg: Forest Fairy">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Forest Fairy Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x420e" id="Divine Forest Fairy Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>83</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x410f" id="Divine Egg: Shroom">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Shroom Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x420f" id="Divine Shroom Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>84</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4110" id="Divine Egg: Great Jelly">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Great Jelly Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4210" id="Divine Great Jelly Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>85</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4111" id="Divine Egg: Spiderbot">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Spiderbot Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4211" id="Divine Spiderbot Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>86</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4112" id="Divine Egg: Cilindron">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Cilindron Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4212" id="Divine Cilindron Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>87</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4113" id="Divine Egg: Gutsbot">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x15c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine pet tier 8. This pet do +74/90 hit points and +37/45 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Divine Gutsbot Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4213" id="Divine Gutsbot Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>88</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>90</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>45</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Ilumi Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <!--<Object type="0x720c" id="Divine Egg: Lil'Oryx">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x19c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a divine Oryx pet tier UT. This pet do +74/95 hit points and +37/48 magic points healing every 1.2 seconds. He can deal lava damage 285 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 5 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Lil Oryx Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4217" id="Lil Oryx Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>lofiChar16x16</File>
+      <Index>0x54</Index>
+    </AnimatedTexture>
+    <Size>90</Size>
+    <ShadowSize>90</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>95</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>48</Max>
+      <Cooldown>1200</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>AOryx Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="5">Slowed</ConditionEffect>
+      <Damage>285</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>-->
+  <Object type="0x4114" id="1st Place - Gold Tournament Trophy">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x198</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This trophy give to you an ultimate pet tier UR. This pet do +90/100 hit points and +45/50 magic points healing every 1.1 seconds. He can deal darkness damage 475 per turn on max range 9.2. PET EFFECT: Paralyze for 3 second, Weakness for 6 seconds and Slow for 10 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <BagType>1</BagType>
+    <Activate objectId="First Tournament Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4214" id="First Tournament Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>91</Index>
+    </AnimatedTexture>
+    <Size>120</Size>
+    <ShadowSize>120</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>90</Min>
+      <Max>100</Max>
+      <Cooldown>1100</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>45</Min>
+      <Max>50</Max>
+      <Cooldown>1100</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>AOryx Shoot</ObjectId>
+      <ConditionEffect duration="3">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="6">Weak</ConditionEffect>
+      <ConditionEffect duration="10">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>475</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4115" id="2nd Place - Silver Tournament Trophy">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x199</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This trophy give to you an ultimate pet tier UR. This pet do +84/95 hit points and +39/48 magic points healing every 1.1 seconds. He can deal darkness damage 415 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 6 seconds and Slow for 10 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <BagType>1</BagType>
+    <Activate objectId="Second Tournament Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4215" id="Second Tournament Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>90</Index>
+    </AnimatedTexture>
+    <Size>120</Size>
+    <ShadowSize>120</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>84</Min>
+      <Max>95</Max>
+      <Cooldown>1100</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>39</Min>
+      <Max>48</Max>
+      <Cooldown>1100</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>AOryx Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="6">Weak</ConditionEffect>
+      <ConditionEffect duration="10">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>415</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x4116" id="3rd Place - Bronze Tournament Trophy">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x19a</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This trophy give to you an ultimate pet tier UR. This pet do +74/95 hit points and +37/48 magic points healing every 1.1 seconds. He can deal darkness damage 395 per turn on max range 9.2. PET EFFECT: Paralyze for 1 second, Weakness for 3 seconds and Slow for 10 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <BagType>1</BagType>
+    <Activate objectId="Third Tournament Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x4216" id="Third Tournament Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>89</Index>
+    </AnimatedTexture>
+    <Size>120</Size>
+    <ShadowSize>120</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>74</Min>
+      <Max>95</Max>
+      <Cooldown>1100</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>37</Min>
+      <Max>48</Max>
+      <Cooldown>1100</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>AOryx Shoot</ObjectId>
+      <ConditionEffect duration="1">Paralyzed</ConditionEffect>
+      <ConditionEffect duration="3">Weak</ConditionEffect>
+      <ConditionEffect duration="10">Slowed</ConditionEffect>
+      <!--<ConditionEffect duration="0.5">Armor Broken</ConditionEffect>-->
+      <Damage>395</Damage>
+      <Size>200</Size>
+      <Speed>250</Speed>
+      <LifetimeMS>920</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x70d3" id="Green Dragon Lord Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x11a</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet untiered. This pet do +27/37 hit points and +14/19 magic points healing every 1.3 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Green Dragon Lord Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x71d3" id="Green Dragon Lord Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x8dEncounters</File>
+      <Index>4</Index>
+    </AnimatedTexture>
+    <Size>60</Size>
+    <ShadowSize>60</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>27</Min>
+      <Max>37</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>14</Min>
+      <Max>19</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Drazzzzz...</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+  </Object>
+  <Object type="0x70d4" id="Red Dragon Lord Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x11b</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet untiered. This pet do +49/62 hit points and +4/9 magic points healing every 1.3 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Red Dragon Lord Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x71d4" id="Red Dragon Lord Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x8dEncounters</File>
+      <Index>2</Index>
+    </AnimatedTexture>
+    <Size>60</Size>
+    <ShadowSize>60</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>49</Min>
+      <Max>62</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>4</Min>
+      <Max>9</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Blaze!</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+  </Object>
+  <Object type="0x70d5" id="Blue Dragon Lord Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x11c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet untiered. This pet do +9/12 hit points and +25/31 magic points healing every 1.3 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Blue Dragon Lord Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x71d5" id="Blue Dragon Lord Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x8dEncounters</File>
+      <Index>3</Index>
+    </AnimatedTexture>
+    <Size>60</Size>
+    <ShadowSize>60</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>9</Min>
+      <Max>12</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>25</Min>
+      <Max>31</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Blizzard!</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+  </Object>
+  <Object type="0x70d6" id="Cyan Dragon Lord Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x11d</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet untiered. This pet do +18/24 hit points and +31/43 magic points healing every 1.3 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Cyan Dragon Lord Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x71d6" id="Cyan Dragon Lord Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x8dEncounters</File>
+      <Index>5</Index>
+    </AnimatedTexture>
+    <Size>80</Size>
+    <ShadowSize>80</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>18</Min>
+      <Max>24</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>31</Min>
+      <Max>43</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Fewlty!</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+  </Object>
+  <Object type="0x70d7" id="Gold Dragon Lord Egg">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj6</File>
+      <Index>0x11e</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This egg give to you a pet untiered. This pet do +62/86 hit points and +9/12 magic points healing every 1.3 seconds.</Description>
+    <Sound>spell/light_heal</Sound>
+    <Consumable />
+    <BagType>1</BagType>
+    <Activate objectId="Gold Dragon Lord Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x71d7" id="Gold Dragon Lord Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x8dEncounters</File>
+      <Index>6</Index>
+    </AnimatedTexture>
+    <Size>80</Size>
+    <ShadowSize>80</ShadowSize>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>62</Min>
+      <Max>86</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>9</Min>
+      <Max>12</Max>
+      <Cooldown>1300</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Fewlty!</Message>
+      <Cooldown>120000</Cooldown>
+    </Tag>
+  </Object>
+  <Object type="0x600a" id="Stefive's Pet Generator">
+    <DisplayId>Stevefive's Frog</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <RemoteTexture>
+      <Instance>draw</Instance>
+      <Id>4533382920798208</Id>
+    </RemoteTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <Activate objectId="Stefive's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <!--<Object type="0x610a" id="Stefive's Pet">
+    <Class>Character</Class>
+    <RemoteTexture>
+      <Instance>draw</Instance>
+      <Id>4533382920798208</Id>
+      <Animated/>
+    </RemoteTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>25</Min>
+      <Max>25</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>29</Min>
+      <Max>29</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>White Flame</ObjectId>
+      <Damage>75</Damage>
+      <Size>80</Size>
+      <Speed>160</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+    <Tag name="Taunt">
+      <Message>Other frogs say Ribbit, I say Rabbit</Message>
+    </Tag>
+  </Object>-->
+  <!--Don't use this one, Don't remove it either, Last time I did, It crashed the server every 5 seconds-->
+  <Object type="0x600b" id="Filenub's Pet Generator">
+    <DisplayId>Filenub's Frog</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x0f</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <Activate objectId="Filenub's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <!--Don't use this one, Don't remove it either, Last time I did, It crashed the server every 5 seconds-->
+  <Object type="0x610b" id="Filenub's Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rPets1</File>
+      <Index>0x0f</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>10</Min>
+      <Max>10</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>5</Min>
+      <Max>5</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+  </Object>
+  <Object type="0x600c" id="Recluse's Pet Generator">
+    <DisplayId>Recluse's Kalle</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <Activate objectId="Recluse's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x610c" id="Recluse's Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+  </Object>
+  <Object type="0x601d" id="Blue's Pet Generator">
+    <DisplayId>Blue's Nut</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>10</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Blue's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x610d" id="Blue's Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>10</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>35</Min>
+      <Max>35</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>20</Min>
+      <Max>20</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Rimmed Mystic Shot</ObjectId>
+      <Damage>125</Damage>
+      <Size>80</Size>
+      <Speed>160</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x601e" id="Purple's Pet Generator">
+    <DisplayId>Tetsuya's Stone Guardian</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>20</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Purple's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x610e" id="Purple's Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>20</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>60</Min>
+      <Max>60</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>35</Min>
+      <Max>35</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>White Flame</ObjectId>
+      <Damage>200</Damage>
+      <Size>80</Size>
+      <Speed>160</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+<Object type="0x601f" id="IFoxy's Pet Generator">
+    <DisplayId>IFoxy's sphinx</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>4</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="IFoxy's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x610f" id="IFoxy's Pet">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16rEncounters</File>
+      <Index>4</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>60</Min>
+      <Max>60</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>35</Min>
+      <Max>35</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>White Flame</ObjectId>
+      <Damage>200</Damage>
+      <Size>80</Size>
+      <Speed>160</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x6020" id="Lelipwnnoobs's Pet Generator">
+    <DisplayId>lelipwnnoob's Blue Limon</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <RemoteTexture>
+      <Instance>draw</Instance>
+      <Id>4705503215091712</Id>
+    </RemoteTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Lelipwnnoob's Pet" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6110" id="Lelipwnnoob's Pet">
+    <Class>Character</Class>
+    <RemoteTexture>
+      <Instance>draw</Instance>
+      <Id>4705503215091712</Id>
+    </RemoteTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>40</Min>
+      <Max>40</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>35</Min>
+      <Max>35</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Blue Boomerang</ObjectId>
+      <Damage>1</Damage>
+      <Size>75</Size>
+      <Speed>180</Speed>
+      <LifetimeMS>850</LifetimeMS>
+    </Projectile>
+  </Object>
+<Object type="0x6021" id="Filenub's Slurp Generator">
+  <DisplayId>Filenub's Slurp</DisplayId>
+  <Class>Equipment</Class>
+  <Item />
+  <AnimatedTexture>
+    <File>chars8x8rPets1</File>
+    <Index>0x0f</Index>
+  </AnimatedTexture>
+  <SlotType>10</SlotType>
+  <Description>A pet received by donating to the server!</Description>
+  <Sound>spell/light_heal</Sound>
+  <InvUse />
+  <VaultItem />
+  <Soulbound />
+  <ScaleValue>3</ScaleValue>
+  <Activate objectId="Filenub's Pet" cooldown="10">PermaPet</Activate>
+  <OldSound>use_potion</OldSound>
+</Object>
+<Object type="0x6111" id="Filenub's Pet">
+  <Class>Character</Class>
+  <AnimatedTexture>
+      <File>chars8x8rPets1</File><Index>0x0f</Index>
+    </AnimatedTexture>
+  <Size>75</Size>
+  <NoMiniMap />
+  <Tag name="HP">
+    <Min>90</Min>
+    <Max>90</Max>
+    <Cooldown>1500</Cooldown>
+  </Tag>
+  <Tag name="MP">
+    <Min>50</Min>
+    <Max>50</Max>
+    <Cooldown>1500</Cooldown>
+  </Tag>
+  <Tag name="Shoot"/>
+  <Projectile id="0">
+    <ObjectId>Purple Spit</ObjectId>
+    <Damage>350</Damage>
+    <Size>80</Size>
+    <Speed>180</Speed>
+    <LifetimeMS>850</LifetimeMS>
+  </Projectile>
+</Object>
+  <Object type="0x6022" id="Versified's Pet Generator">
+    <DisplayId>Versified's Pirate</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <RemoteTexture>
+      <Instance>draw</Instance>
+      <Id>6276151079075840</Id>
+    </RemoteTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Versified's Pirate" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6112" id="Versified's Pirate">
+    <Class>Character</Class>
+    <RemoteTexture>
+      <Instance>draw</Instance>
+      <Id>6276151079075840</Id>
+    </RemoteTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>10</Min>
+      <Max>10</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>5</Min>
+      <Max>5</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Blade</ObjectId>
+      <Damage>80</Damage>
+      <Size>80</Size>
+      <Speed>80</Speed>
+      <LifetimeMS>500</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x6023" id="Levelx100's Pet Generator">
+    <DisplayId>Levelx100's lil' Bes</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>12</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Levelx100's lil' Bes" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6113" id="Levelx100's lil' Bes">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>12</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>25</Min>
+      <Max>25</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>15</Min>
+      <Max>15</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Darkness Bolt</ObjectId>
+      <Damage>75</Damage>
+      <Size>80</Size>
+      <Speed>240</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x6024" id="SuperRyGuy's Pet Generator">
+    <DisplayId>SuperRyGuy's White Bag Troll</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <RemoteTexture>
+      <Instance>draw</Instance>
+      <Id>6021955587145728</Id>
+    </RemoteTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="SuperRyGuy's Troll" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6114" id="SuperRyGuy's Troll">
+    <Class>Character</Class>
+    <RemoteTexture>
+      <Instance>draw</Instance>
+      <Id>6021955587145728</Id>
+    </RemoteTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>20</Min>
+      <Max>20</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>10</Min>
+      <Max>10</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Blade</ObjectId>
+      <Damage>50</Damage>
+      <Size>75</Size>
+      <Speed>120</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x6025" id="LightningI's Pet Generator">
+    <DisplayId>LightningI's lil' Geb</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>11</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="LightningI's Geb" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6115" id="LightningI's Geb">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters</File>
+      <Index>11</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>25</Min>
+      <Max>25</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>15</Min>
+      <Max>15</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Darkness Bolt</ObjectId>
+      <Damage>75</Damage>
+      <Size>75</Size>
+      <Speed>80</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+    <Object type="0x6026" id="Mike's Pet Generator">
+    <DisplayId>Mike's Goblin Wizard</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars8x8rLow1</File><Index>0x0b</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Mike's Goblin" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6116" id="Mike's Goblin">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rLow1</File><Index>0x0b</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>60</Min>
+      <Max>60</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <!--55 MP Heal because he said he wanted to put the attack to MP heal.-->
+    <Tag name="MP">
+      <Min>55</Min>
+      <Max>55</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+  </Object>
+  <Object type="0x6027" id="xXBottedXx's Pet Generator">
+    <DisplayId>xXBottedXx's Candy Gnome</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>44</Index>
+    </AnimatedTexture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="xXBottedXx's Candy Gnome" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6117" id="xXBottedXx's Candy Gnome">
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16dEncounters2</File>
+      <Index>44</Index>
+    </AnimatedTexture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>35</Min>
+      <Max>35</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>20</Min>
+      <Max>20</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Taunt">
+      <Message>Bring him the photo</Message>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Magic Sparkle</ObjectId>
+      <Damage>125</Damage>
+      <Size>75</Size>
+      <Speed>80</Speed>
+      <LifetimeMS>450</LifetimeMS>
+    </Projectile>
+  </Object>
+
+  <Object type="0x6028" id="Obama's Pet Generator">
+    <DisplayId>Obama's Phoenix Lord</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiChar216x16</File>
+      <Index>0x2a</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <ScaleValue>3</ScaleValue>
+    <Activate objectId="Obama's Phoenix Lord" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6118" id="Obama's Phoenix Lord">
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiChar216x16</File>
+      <Index>0x2a</Index>
+    </Texture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>25</Min>
+      <Max>25</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>15</Min>
+      <Max>15</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Fire Spinner</ObjectId>
+      <Damage>75</Damage>
+      <Size>75</Size>
+      <Speed>80</Speed>
+      <LifetimeMS>550</LifetimeMS>
+    </Projectile>
+  </Object>
+
+  <Object type="0x6029" id="Willper's Pet Generator">
+    <DisplayId>Willper's White Loot Bag</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj4</File>
+      <Index>0x94</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A pet received by donating to the server!</Description>
+    <Sound>spell/light_heal</Sound>
+    <InvUse />
+    <VaultItem />
+    <Soulbound />
+    <Activate objectId="Willper's White Bag" cooldown="10">PermaPet</Activate>
+    <OldSound>use_potion</OldSound>
+  </Object>
+  <Object type="0x6119" id="Willper's White Bag">
+    <Class>Character</Class>
+    <Texture>
+      <File>lofiObj4</File>
+      <Index>0x94</Index>
+    </Texture>
+    <Size>75</Size>
+    <NoMiniMap />
+    <Tag name="HP">
+      <Min>25</Min>
+      <Max>25</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="MP">
+      <Min>15</Min>
+      <Max>15</Max>
+      <Cooldown>1500</Cooldown>
+    </Tag>
+    <Tag name="Shoot"/>
+    <Projectile id="0">
+      <ObjectId>Rainbow Magic Star</ObjectId>
+      <Damage>75</Damage>
+      <Size>75</Size>
+      <Speed>80</Speed>
+      <LifetimeMS>550</LifetimeMS>
+    </Projectile>
+  </Object>
+</Remote>
