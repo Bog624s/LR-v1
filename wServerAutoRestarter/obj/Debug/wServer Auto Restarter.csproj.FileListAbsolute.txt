@@ -1,0 +1,12 @@
+C:\Users\Addmin\Desktop\loeres\wServer Auto Restarter\bin\Debug\wServer Auto Restarter.exe
+C:\Users\Addmin\Desktop\loeres\wServer Auto Restarter\bin\Debug\wServer Auto Restarter.pdb
+C:\Users\Addmin\Desktop\loeres\wServer Auto Restarter\obj\Debug\wServer Auto Restarter.csprojResolveAssemblyReference.cache
+C:\Users\Addmin\Desktop\loeres\wServer Auto Restarter\obj\Debug\wServer Auto Restarter.exe
+C:\Users\Addmin\Desktop\loeres\wServer Auto Restarter\obj\Debug\wServer Auto Restarter.pdb
+C:\Users\Admin\Desktop\loeres\wServer Auto Restarter\bin\Debug\wServer Auto Restarter.exe
+C:\Users\Admin\Desktop\loeres\wServer Auto Restarter\bin\Debug\wServer Auto Restarter.pdb
+C:\Users\Admin\Desktop\loeres\wServer Auto Restarter\obj\Debug\wServer Auto Restarter.exe
+C:\Users\Admin\Desktop\loeres\wServer Auto Restarter\obj\Debug\wServer Auto Restarter.pdb
+C:\Users\Admin\Desktop\loeres\wServer Auto Restarter\bin\Debug\wServer Auto Restarter.exe.config
+C:\Users\Admin\Desktop\loeres\wServer Auto Restarter\bin\Debug\MySql.Data.dll
+C:\Users\Admin\Desktop\loeres\wServer Auto Restarter\obj\Debug\wServer Auto Restarter.csprojResolveAssemblyReference.cache
